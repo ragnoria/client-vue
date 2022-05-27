@@ -1,4 +1,7 @@
 import {createApp} from "vue";
 import App from "./App.vue";
+import Echo from "./libs/Echo.js";
 
-createApp(App).mount('#app');
+window.App = createApp(App).mount('#app');
+window.Echo = new Echo;
+window.Echo.connect();
