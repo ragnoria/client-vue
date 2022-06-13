@@ -12,9 +12,6 @@ export default {
   components: {Lobby},
   mounted() {
     axios.get(Config.apiUrl + '/login', {
-      params: {
-        ID: 12345
-      },
       withCredentials: true
     })
     .then(function (response) {
